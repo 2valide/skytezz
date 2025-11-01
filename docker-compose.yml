@@ -14,7 +14,7 @@ services:
       - "traefik.http.routers.websecure.rule=Host(`skytezz.azhao.fr`)"
       - "traefik.http.routers.websecure.entrypoints=websecure"
       - "traefik.http.routers.websecure.tls=true"
-      - "traefik.http.routers.websecure.tls.certresolver=myresolver"
+      - "traefik.http.routers.websecure.tls.certresolver=letsencrypt"
     networks:
       - web
 
